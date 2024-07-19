@@ -1,0 +1,19 @@
+CompanyID,CEO,FirstYear,LastYear
+0,Jeff bezos,1994,2021
+0,Andy Jassy,2021,2024
+1,Michael Scott,1977,1981
+1,Mike Markkula,1981,1983
+1,John Sculley,1983,1993
+1,Michael Spindler,1993,1996
+1,Gilbert Frank Amelio,1996,1997
+1,Steve Jobs,1997,2011
+1,Tim Cook,2011,2024
+2,Mark Zuckerberg,2004,2024
+3,Larry Page,1998,2001
+3,Sergey Brin,1998,2001
+3,Eric Schmidt,2001,2011
+3,Larry Page,2011,2015
+3,Sundar Pichai,2015,2024
+4,Reed Hastings,1999,2020
+4,Ted Sarandos,2023,2023
+4,Greg Peters,2023,2024
