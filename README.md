@@ -18,3 +18,11 @@ CEO History Dataset
     - Amazon	https://www.historyoasis.com/post/history-amazon-ceos
     - Netflix	https://www.historyoasis.com/post/netflix-ceo-history
     - Meta	    https://www.britannica.com/money/Mark-Zuckerberg
+
+Market Capitalization Dataset
+
+    - Apple     https://companiesmarketcap.com/apple/marketcap/
+    - Google    https://companiesmarketcap.com/alphabet-google/marketcap/
+    - Amason    https://companiesmarketcap.com/amazon/marketcap/
+    - Netflix   https://companiesmarketcap.com/netflix/marketcap/
+    - Meta      https://companiesmarketcap.com/meta-platforms/marketcap/
