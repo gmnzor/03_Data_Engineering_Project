@@ -1,0 +1,31 @@
+Company
+-
+CompanyID int PK
+CompanyName varchar(16)
+Founded int
+
+CEO
+-
+CompanyID int FK >- Company.CompanyID
+CeoName varchar(64)
+FirstYear int
+LastYear int
+
+
+Stock
+-
+CompanyID int PK FK >- Company.CompanyID
+Date date PK
+Open float
+High float
+Low float
+Close float
+Adj_Close float
+Volume float
+
+MarketCap
+-
+MarketCap(Billions) float
+CompanyID int PK FK >- Company.CompanyID
+Year PK int
+Change float

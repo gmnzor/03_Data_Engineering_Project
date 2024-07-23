@@ -5,8 +5,8 @@
 CREATE TABLE "CEOs" (
     "CompanyID" int   NOT NULL,
     "CeoName" varchar(64)   NOT NULL,
-    "FirstYear" date   NOT NULL,
-    "LastYear" date   NOT NULL
+    "FirstYear" int   NOT NULL,
+    "LastYear" int   NOT NULL
 );
 
 CREATE TABLE "Stock" (
@@ -32,11 +32,12 @@ CREATE TABLE "Company" (
      )
 );
 
-CREATE TABLE "YearlyWorth" (
+CREATE TABLE "MarketCap" (
+    "MarketCap(Billions)" float   NOT NULL,
     "CompanyID" int   NOT NULL,
-    "Year" date   NOT NULL,
-    "Valuation" float   NOT NULL,
-    CONSTRAINT "pk_YearlyWorth" PRIMARY KEY (
+    "Year" int   NOT NULL,
+    "Change" float   NOT NULL,
+    CONSTRAINT "pk_MarketCap" PRIMARY KEY (
         "CompanyID","Year"
      )
 );
@@ -47,6 +48,6 @@ REFERENCES "Company" ("CompanyID");
 ALTER TABLE "Stock" ADD CONSTRAINT "fk_Stock_CompanyID" FOREIGN KEY("CompanyID")
 REFERENCES "Company" ("CompanyID");
 
-ALTER TABLE "YearlyWorth" ADD CONSTRAINT "fk_YearlyWorth_CompanyID" FOREIGN KEY("CompanyID")
+ALTER TABLE "MarketCap" ADD CONSTRAINT "fk_MarketCap_CompanyID" FOREIGN KEY("CompanyID")
 REFERENCES "Company" ("CompanyID");
 
